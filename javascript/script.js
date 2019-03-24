@@ -8,7 +8,6 @@ xhttp.onreadystatechange = function() {
     movies = movies.filter(x => x[10] == "Golden Gate Bridge").map(x =>
        x[8]+" in year: "+x[9]+" by production: "+x[12] + "<br>"
     ).join("\n");
-  //  var result = movies.join("\n");
     document.getElementById('result').innerHTML += movies;
   }
 };
